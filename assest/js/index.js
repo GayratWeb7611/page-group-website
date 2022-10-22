@@ -7,3 +7,4 @@ dropDown.addEventListener('click', ()=>{
     xMenu.classList.toggle('fa-bars')
     xMenu.classList.toggle('fa-times')
 })
+

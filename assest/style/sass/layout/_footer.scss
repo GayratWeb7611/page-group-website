@@ -1,0 +1,34 @@
+footer{
+color: #fff;
+background-color: #222;
+padding: 50px 0 0 0 ;
+
+li{
+    list-style-type: disc;
+    font-size: 14px;
+    color: #828181;
+    font-family: "RobotoLight";
+    margin-bottom: 20px;
+   
+}
+.white-title{
+    font-size: 22px;
+    line-height: 24px!important;
+    padding-bottom: 60px;
+    margin-bottom: 30px;
+
+}
+.contact-info{
+    .contact-info-phones , .contact-info-mail , .contact-info-map , .contact-info-time{
+        font-size: 14px;
+    color: #828181;
+    margin-bottom: 20px;
+        i{
+            padding-right: 10px;
+        }
+    }
+    .contact-info-phones{
+        font-size: 18px;
+    }
+}
+}

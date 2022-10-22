@@ -175,7 +175,7 @@ section#n-usluga{
 }
 
 section#podgotovim{
-    background: $primeryColor;
+    background: $blue;
     margin: 50px 0;
     .p-wrapper{
         display: grid;
@@ -381,5 +381,316 @@ section#our-client{
                 }
             }
         }
+    }
+}
+
+
+section#price{
+    z-index: 1;
+    }
+
+section#reviews{
+    .container{
+        .r-cards{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 40px;
+            .r-column{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                .r-card{
+                    padding: 40px;
+                    background: #f8f8f8;
+                    border-radius: 20px;
+                    transition-duration: 1s;
+                    &:hover{
+                        transform: scale(1.15, 1.15);
+                        box-shadow: 0 0 5px #ccc;
+                    }
+                    .r-card-title{
+                        font-size: 22px;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                    }
+                    .r-card-desc{
+                        font-size: 20px;
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section#leave-form{
+    .l-f-header{
+        display: flex;
+        justify-content: space-between;
+        z-index: 7;
+        .l-f-title{
+            text-align: center;
+            h3{
+                font-size: 38px;
+                font-weight: 700;
+                margin-bottom: 30px;
+
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+    .l-f-body{
+        position: relative;
+        background: $blue;
+        padding: 90px 70px;
+        border-radius: 30px;
+        margin-top: -80px;
+        z-index: 8;
+        form{
+            .input-group{
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+                .l-f-input-container{
+                    display: flex;
+                    gap: 20px;
+                    flex-wrap: wrap;
+                    position: relative;
+                    transition: .2s ease all;
+                       
+                    .l-f-input{
+                        border-radius: 10px;
+                        padding: 29px 0 23px 28px;
+                        border: none;
+                        font-size: 24px;
+                        height: 100%;
+                        width: 400px;
+                        background-image: linear-gradient(rgba(255,255,255,0) 0,rgba(255,255,255,0) 100%);
+                        &:focus-visible{
+                            border: none!important;
+                            border-color: #fff;
+                        }
+                        &:focus+ .l-f-label{
+                            top: 8px;
+                        }
+                    }
+                    
+                    .l-f-label{
+                            padding-left: 11px;
+                            left: 0;
+                            pointer-events: none;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: 5px;
+                            overflow: hidden;
+                            transition: .3s;
+                            span{
+                                padding-left: 20px;
+                                color: red;
+                            }
+                    }
+                    .required-message{
+                        display: none;
+                    }
+                }
+                .required{
+                    transform: translateY(-20px);
+                    position: relative;
+                    .l-f-input{
+                        background-color: rgba(242,88,48,0.08);
+                        border-color: rgba(242,88,48,0.25);
+                    }
+                    .required-message{
+                        padding: 0;margin: 0;
+                        line-height: 120%;
+                        display: block;
+                        background: #f25830;
+                        position: absolute;
+                        top: 97%;
+                        left: 12px;
+                        padding: 0 10px;
+                        font-size: 14px;
+                        color: $white;
+    
+                        &::after{
+                            content: '';
+                            display: block;
+                            height: 6px;
+                            width: 6px;
+                            box-sizing: border-box;
+                            border: 3px solid #f25830;
+                            border-top-color: transparent;
+                            border-right-color: transparent;
+                            position: absolute;
+                            left: 0;
+                            bottom: 100%;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+
+section#biotexnologiya{
+    .b-clean-container{
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+        gap: 40px;
+        .b-clean-left{
+            position: relative;
+            overflow: hidden;
+            p{
+                position: absolute;
+                width: 90%;
+                right: 0;
+                bottom: 5%;
+                background: $blue;
+                color: $white;
+                    position: absolute;
+    
+    border-radius: 20px 0 20px 20px;
+    padding: 27px 38px 30px 30px;
+    margin: 0;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .b-clean-right{
+            h4{
+                font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: -10px;
+            }
+            p{
+                margin-bottom: 20px;
+                margin-top: 0;
+                font-size: 20px;
+            }
+        }
+    }
+    .pluses_block{
+        h4{
+            text-align: center;
+            margin: 60px auto;
+            font-size: 24px;
+        }
+        .pluses_list{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            .pluses_item{
+                border: 1px solid rgba(49, 193, 249, .11);
+                box-shadow: 1px 14px 29px rgb(49 193 249 / 5%);
+                border-radius: 20px;
+                max-width: 30%;
+                display: flex;
+                align-items: baseline;
+                gap: 15px;
+                padding: 30px;
+                padding-left: 40px;
+                cursor: pointer;
+                background-color: $white;
+                transition-duration: .5s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+                .plus-description{
+                    margin: 0 0 10px;
+                    font-size: 20px;
+
+                }
+                .plus{
+                    position: relative;
+                    text-align: center;
+                    display: grid;
+                    place-items: center;
+                    top: -15px;
+                    padding-right: 10px;
+                    .plus-gorizantal{
+                        width: 25px;
+                        height: 3px;
+                        background: $blue;
+                        position: absolute;
+                        z-index: 99;
+                    }
+                    .plus-vertical{
+                        width: 2.5px;
+                        height: 25px;
+                        background: $blue;
+                        position: absolute; 
+                        z-index: 99;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section#kontakt{
+    .k-cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 50px;
+        justify-content: space-evenly;
+        padding-top: 100px;
+        .k-card{
+            background: #f8f8f8;
+            border-radius: 20px;
+            text-align: center;
+            margin: 0 25px;
+            padding: 20px;
+            padding-bottom: 0;
+            p,a,img{
+                margin-top: -110px;
+            }
+            img{
+                width: 266px;
+            }
+                p{
+                    margin: 0;
+                    padding: 0;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                a{
+                    color: #0275d8;
+                    transition: .8s;
+                    &:hover{
+                        color: $green;
+                    }
+                }
+                .k-black{
+                    color: $black;
+                    &:hover{
+                        color: $black;
+                    }
+                }
+        }
+    }
+}
+
+.fixid{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9812390;
+    width: 64px;
+    height: 60px;
+    background-image:  url('https://cleanfield.ru/local/templates/salon-template/images/up.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    a{
+        width: 100%;
+        height: 100%;
     }
 }
