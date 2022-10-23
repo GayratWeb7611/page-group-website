@@ -22,11 +22,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Montserrat font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<!-- inter font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
 
     <header class="position-sticky top-0 bg-white " >
-      <div class="container  px-5 ">
+      <div class="container header-container">
         <div class="header-top py-2 d-flex justify-content-between align-items-center">
           <div class="logo">
             <a href="/">
@@ -63,15 +71,15 @@
         <div class="header-bottom">
           <nav >
             <ul class=" dropMenu d-flex m-0 p-0 flex-wrap justify-content-between py-3">
-              <li><a href="#">О компании</a></li>
-              <li><a href="#">Услуги</a></li>
-              <li><a href="#">Цены</a></li>
+              <li><a href="#showcase">О компании</a></li>
+              <li><a href="#n-usluga">Услуги</a></li>
+              <li><a href="#price">Цены</a></li>
               <li><a href="#">Наши работы</a></li>
               <li><a href="#">Акции</a></li>
               <li><a href="#">Отзывы</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#kontakt">Контакты</a></li>
               <li><a href="#">Статьи</a></li>
-              <li><a href="#">Вопросы-ответы</a></li>
+              <li><a href="#question">Вопросы-ответы</a></li>
             </ul>
           </nav>
         </div>
@@ -100,6 +108,7 @@
 
       <div class="container show-container">
         <div class="show-left">
+          <div class="bg-img-blur"></div>
           <h1>     
 		Клининговая компания 
     <span class="blue" >CleanField</span>
@@ -189,6 +198,57 @@
 
     </section>
 
+
+       <section id="leave-form" >
+      <div class="container">
+        <div class="l-f-header">
+          <img src="https://cleanfield.ru/art/wash1.png" alt="">
+          <div class="l-f-title">
+            <h3>
+              Оставьте заявку на расчёт стоимости
+            </h3>
+            <p>
+              И наш менеджер вам перезвонит
+            </p>
+
+          </div>
+          <img  src="https://cleanfield.ru/art/wash2.png" alt="">
+        </div>
+        <div class="l-f-body">
+          <form method="post" novalidate="novalidate">
+
+            <div class="input-group">
+                          <div class="l-f-input-container ">
+              <input type="text" name="name"  class="l-f-input required-input" required >
+              <div class="l-f-label">
+                Имя
+                <span>*</span>
+              </div>
+              <p class="required-message">
+                ❕ Поле обязательно для заполнения
+              </p>
+            </div>
+            <div class="l-f-input-container required">
+              <input type="text" name="number"  class="l-f-input required-input" required >
+              <div class="l-f-label">
+                Имя
+                <span>*</span>
+              </div>
+              <p class="required-message">
+                ❕ Поле обязательно для заполнения
+              </p>
+            </div>
+            <div class="btn-container">
+              <button type="submit" class="btn-green" >
+                Отправить
+              </button>
+            </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <section id="n-usluga">
       <div class="container">
         <h1 class="title" >
@@ -265,6 +325,7 @@
         </div>
       </div>
     </section>
+
     <section id="podgotovim">
       <div class="container">
         <div class="p-wrapper">
@@ -399,10 +460,30 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
+          </div>
         </div>
       </div>
     </section>
+
+      <section id="podgotovim">
+      <div class="container">
+        <div class="p-wrapper">
+          <div class="left">
+            <h2>
+              Подготовим персональное <br>предложение для вашей компании
+            </h2>
+            <a href="#">
+              Оставьте заявку
+            </a>
+            
+          </div>
+          <div class="right">
+            <img src="https://cleanfield.ru/art/pic_paper-big.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="price">
       <h1 class="title" >Цены на клининг</h1>
       <div class="container">
@@ -455,7 +536,6 @@
       </div>
     </section>
 
-
     <section id="reviews" >
       <h1 class="title">Отзывы</h1>
       <p class="text" >Мнения клиентов о работе нашей компании</p>
@@ -464,7 +544,7 @@
         <div class="r-column">
           <div class="r-card">
           <p class="r-card-title">
-Екатерина любимова
+            Екатерина любимова
           </p>
           <p class="r-card-desc">
             Благодарю за качественно выполненную уборку трех наших цехов. Это была непроста задача, но ваши сотрудники справились.Получилось отлично, своими силами мы бы не добились такой чистоты. Будем еще не единожды обращаться в компанию cleanfield.
@@ -472,7 +552,7 @@
         </div>
         <div class="r-card">
           <p class="r-card-title blue">
-Алла непорест
+            Алла непорест
           </p>
           <p class="r-card-desc">
             Здравствуйте! Не могла не написать пару добрых слов в адрес вашей компании.Очень понравилось качество уборки офиса, никаких замечаний не имеем, будем обращаться еще, большое спасибо!
@@ -481,7 +561,7 @@
         
         <div class="r-card">
           <p class="r-card-title ">
-МАРИЯ
+            МАРИЯ
           </p>
           <p class="r-card-desc">
            Добрый день. Хотим поблагодарить ребят из Клинфилда в особенности Константина за честно отработанную генеральную уборку в нашем офисе.
@@ -491,7 +571,7 @@
        <div class="r-column">
          <div class="r-card">
           <p class="r-card-title blue">
-Ольга П.
+            Ольга П.
           </p>
           <p class="r-card-desc">
             Объявляем благодарность Клинфилд за уборку загородного дома в это воскресение! Да-да и в выходные можно пригласить работников из этой компании. Мы остались довольны чистыми стенами, потолками и полами! Все сделано на пять с плюсом!
@@ -525,7 +605,7 @@
         </div>
          <div class="r-card">
           <p class="r-card-title">
-Администрация складского комплекста
+            Администрация складского комплекста
           </p>
           <p class="r-card-desc">
             Спасибо большое Константину и его ребятам за добросовестно помытые окна на нашем складе! Стало светлее в помещении и на душе!
@@ -534,7 +614,7 @@
         
         <div class="r-card">
           <p class="r-card-title green">
-Екатерина
+            Екатерина
           </p>
           <p class="r-card-desc">
             Благодарим за уборку ресторана компанию cleanfield. Помещение реально как после ремонта, хотя ничего не изменилось, просто помыли-почистили и навели порядок. Сотрудницы молодцы, хорошо знают свою работу. Теперь посетителям будет еще приятнее к нам приходить, а вас мы будем рекомендовать.
@@ -547,7 +627,7 @@
     </section>
 
 
-    <section id="leave-form" >
+        <section id="leave-form" >
       <div class="container">
         <div class="l-f-header">
           <img src="https://cleanfield.ru/art/wash1.png" alt="">
@@ -586,17 +666,16 @@
                 ❕ Поле обязательно для заполнения
               </p>
             </div>
-            </div>
-            <div class="btn-container mt-5 ">
+            <div class="btn-container">
               <button type="submit" class="btn-green" >
                 Отправить
               </button>
+            </div>
             </div>
           </form>
         </div>
       </div>
     </section>
-
     <section id="question" >
 
       <h1 class="title">
@@ -818,7 +897,7 @@
    </div>
   </section>
 
-  <section id="leave-form" >
+       <section id="leave-form" >
       <div class="container">
         <div class="l-f-header">
           <img src="https://cleanfield.ru/art/wash1.png" alt="">
@@ -857,17 +936,16 @@
                 ❕ Поле обязательно для заполнения
               </p>
             </div>
-            </div>
-            <div class="btn-container mt-5 ">
+            <div class="btn-container">
               <button type="submit" class="btn-green" >
                 Отправить
               </button>
+            </div>
             </div>
           </form>
         </div>
       </div>
     </section>
- 
 
 
 
@@ -959,7 +1037,7 @@
 					<div class="col-12">
 						<div class="developer" style="justify-content: center;">
 														
-							<p class="text-center">© 2018—2022 CleanField <br><a href="/map/">Карта сайта</a></p>
+							<p class="text-center">© 2018—2022 CleanField <br><a href="#">Карта сайта</a></p>
 						</div>
 					</div>
 				</div>
@@ -967,7 +1045,6 @@
 			<div class="col-lg-1"></div>
 		</div>
 	</div>
-		<div id="naverh" class="icon-scroll" style="display: block;"></div>
 
 </div></footer>
 
@@ -982,5 +1059,16 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+
+    <div class="btn-hover-eff">
+      <a href="">Оставьте заявку
+      <span class="btn-hov-1 blue-hover"></span>
+      <span class="btn-hov-2 blue-hover "></span>
+      <span class="btn-hov-3 blue-hover "  ></span>
+      <span class="btn-hov-4 blue-hover "></span>
+
+      </a>
+
+    </div>
   </body>
 </html>

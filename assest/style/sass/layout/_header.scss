@@ -1,8 +1,12 @@
 header{
     z-index: 982340;
+    .header-container{
+        padding: 0 100px;
+    }
     .header-top {
         border-bottom: 1px solid $grey ;
         font-size: 18px;
+        padding: 15px 0;
         @media (max-width: 1135px) {
             font-size: 16px;
         }
@@ -59,8 +63,7 @@ header{
               display: block;
                 }
             @media (max-width: 730px) {
-              display: flex;
-              
+              display: flex; 
                 }
         }
         .drop-menu{
@@ -85,16 +88,19 @@ header{
     }
     .header-bottom {
         border-bottom: 1px solid $grey ;
+        padding: 5px 0;
         
         nav{
             ul  {
+                font-size: 16px;
+                font-family: 'Inter', sans-serif;
                 transition: .6s;
                 @media (max-width: 768px) {
                 display: block!important;
                 position: absolute;
                 right: -100%;
                 li{
-                    font-size: 18px;
+                    
                     padding: 5px 20px;
                     a{
                         border-top: 1px solid $grey;
@@ -102,9 +108,6 @@ header{
                     }
                 }
                 }
-                @media (max-width: 1135px) {
-            font-size: 15px;
-        }
             }
             ul.toggleNav{
                 @media (max-width: 768px) {
