@@ -2,6 +2,18 @@ header{
     z-index: 982340;
     .header-container{
         padding: 0 100px;
+        @media (max-width: 850px) {
+            padding: 0 50px;
+            
+        }
+        @media (max-width: 500px) {
+            padding: 0 20px;
+            
+        }
+        @media (max-width: 400px) {
+            padding: 0;
+            
+        }
     }
     .header-top {
         border-bottom: 1px solid $grey ;
