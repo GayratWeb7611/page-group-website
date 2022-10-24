@@ -1,5 +1,17 @@
+.drop-close{
+                    position: fixed;
+                    z-index: 38987;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                    opacity: 0;
+                }
 header{
     z-index: 982340;
+    position: sticky;
+    top: 0;
+    
     .header-container{
         padding: 0 100px;
         @media (max-width: 850px) {
@@ -14,18 +26,37 @@ header{
             padding: 0;
             
         }
+        
     }
     .header-top {
         border-bottom: 1px solid $grey ;
         font-size: 18px;
         padding: 15px 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        @media (max-width: 770px) {
+             justify-content: space-between;
+                }
         @media (max-width: 1135px) {
             font-size: 16px;
         }
+        .logo{
+            margin-right: auto;
+             @media (max-width: 770px) {
+             margin: 0;
+                }
+        }
         .location{
             @media (max-width: 968px) {
-                display: none;
+                order: 4;
+                margin: auto;
                 }
+            @media (max-width: 770px) {
+              display: none;
+                }
+                margin-right: auto;
             }
             .email{
             @media (max-width: 768px) {
@@ -33,6 +64,8 @@ header{
                 }
         }
         .contact{
+            display: flex;
+            flex-wrap: wrap;
             a{
                 font-weight: bold;
                 &:hover{
@@ -53,7 +86,7 @@ header{
                     display: block;
                 }
             }
-            button{
+            a.button{
                 background: $btnBg;
                 color: $secondaryColor;
                 border-radius: 20px;
@@ -101,16 +134,21 @@ header{
     .header-bottom {
         border-bottom: 1px solid $grey ;
         padding: 5px 0;
-        
+        @media (max-width: 768px) {
+            border-bottom: none ;
+            
+        }
         nav{
             ul  {
                 font-size: 16px;
                 font-family: 'Inter', sans-serif;
                 transition: .6s;
                 @media (max-width: 768px) {
-                display: block!important;
+                display: inline-block!important;
                 position: absolute;
                 right: -100%;
+                background-color: $white;
+                width: 50%;
                 li{
                     
                     padding: 5px 20px;
@@ -123,7 +161,7 @@ header{
             }
             ul.toggleNav{
                 @media (max-width: 768px) {
-                    right: 10%;
+                    right: 0%;
                 }
                 }
         }

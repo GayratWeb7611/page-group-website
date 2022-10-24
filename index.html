@@ -33,9 +33,9 @@
   </head>
   <body>
 
-    <header class="position-sticky top-0 bg-white " >
+    <header class="bg-white" >
       <div class="container header-container">
-        <div class="header-top py-2 d-flex justify-content-between align-items-center">
+        <div class="header-top ">
           <div class="logo">
             <a href="/">
               <img src="https://cleanfield.ru/logo.svg" alt="logo">
@@ -43,7 +43,7 @@
           </div>
           <div class="location">
             <p class="p-0 m-0">
-              <i class="fa-solid fa-location-dot"></i>
+              <i class="fas fa-map-marker-alt"></i>
               Санкт-Петербург, ул. Профессора Попова, д.8
             </p>
           </div>
@@ -56,10 +56,47 @@
             <a href="tel:+998900077611" class="phone-icon">
               <i class="fas fa-phone-alt"></i>
             </a>
-
-            <button type="button" class="btn "                  data-bs-toggle="modal"  data-bs-target="#staticBackdrop">
- Заказать звонок
-            </button>
+            <div class="header-modal">
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+     <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <span class="close-bg">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </span>
+        
+        <div class="modal-body">
+          <form action="">
+              <input type="text" class="input-text" placeholder="Ваше имя ">
+              <input type="number" class="input-text" placeholder="Ваш телефон "> <br>
+              <input type="checkbox" class="checkbox-input"  name="#" id="checked">
+              <label for="checked" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Нажимая кнопку «Жду звонка», я даю свое согласие на обработку моих
+  персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей,
+  определенных в Согласии на обработку персональных данных</label>
+  <button class="btn">Жду звонка</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <span class="close-bg">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </span>
+      <div class="modal-body">
+        Hide this modal and show the first with the button below.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ex maxime unde voluptas illum alias, dignissimos iure quos atque a. Quod veritatis, possimus laborum illo nisi labore voluptas minus consequatur officia rem aspernatur unde iste voluptatem accusantium dolores recusandae deserunt sunt optio corrupti doloribus ab temporibus dicta? Aliquid, cupiditate delectus reiciendis nostrum quibusdam iure at amet nihil magni dignissimos earum esse? Inventore dolorum saepe quis recusandae, praesentium laboriosam error ipsa, dolores quos beatae sed veniam, molestiae aperiam unde! Totam quos nemo nisi deleniti cum, molestias ducimus necessitatibus doloribus ut qui fugit quod, eius animi ipsum cupiditate labore voluptatum nihil laborum iure culpa deserunt dolor? Voluptates quaerat repellendus soluta quidem dolorum atque maiores perferendis eveniet numquam laboriosam. Placeat, quis? Iusto, repudiandae.
+      </div>
+<button type="button" class=" btn-prinimayu" data-bs-dismiss="modal" aria-label="Close">Принимаю</button>
+<label for="checked" type="button" class="btn-prinimayu for-bg" data-bs-dismiss="modal" aria-label="Close">Не принимаю</label>
+    </div>
+  </div>
+</div>
+            </div>
+            <a  class="btn button" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                Заказать звонок
+            </a>
 
           </div>
           <div class="drop-menu">
@@ -71,12 +108,12 @@
         <div class="header-bottom">
           <nav >
             <ul class=" dropMenu d-flex m-0 p-0 flex-wrap justify-content-between py-3">
-              <li><a href="#showcase">О компании</a></li>
+              <li><a href="#why_cleanfield">О компании</a></li>
               <li><a href="#n-usluga">Услуги</a></li>
               <li><a href="#price">Цены</a></li>
               <li><a href="#">Наши работы</a></li>
               <li><a href="#">Акции</a></li>
-              <li><a href="#">Отзывы</a></li>
+              <li><a href="#reviews">Отзывы</a></li>
               <li><a href="#kontakt">Контакты</a></li>
               <li><a href="#">Статьи</a></li>
               <li><a href="#question">Вопросы-ответы</a></li>
@@ -85,23 +122,9 @@
         </div>
       </div>
     </header>
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
-      </div>
-    </div>
-  </div>
-</div>
+    <div class="drop-close"></div>
+
+ 
 
 
     <section id = 'showcase' >
@@ -139,7 +162,7 @@
 
           <div class="tc-item">
             <div class="tc-icon">
-              <i class="fas fa-phone"></i>
+              <img src="./assest/png/untitled.png" alt="">
             </div>
             <p class="tc-text">
               Отдел качества, следит за качеством работ на каждом объекте
@@ -147,7 +170,7 @@
           </div>
           <div class="tc-item">
             <div class="tc-icon">
-              <i class="fas fa-phone"></i>
+              <img src="./assest/png/untitled (1).png" alt="">
             </div>
             <p class="tc-text">
               Отдел качества, следит за  на каждом объекте
@@ -155,7 +178,7 @@
           </div>
           <div class="tc-item">
             <div class="tc-icon">
-              <i class="fas fa-phone"></i>
+              <img src="./assest/png/untitled (2).png" alt="">
             </div>
             <p class="tc-text">
               Отдел качества, следит за объекте
@@ -163,7 +186,7 @@
           </div>
           <div class="tc-item">
             <div class="tc-icon">
-              <i class="fas fa-phone"></i>
+              <img src="./assest/png/untitled (3).png" alt="">
             </div>
             <p class="tc-text">
               Отдел качества, следит за качеством работ на каждом объекте
@@ -171,7 +194,7 @@
           </div>
           <div class="tc-item">
             <div class="tc-icon">
-              <i class="fas fa-phone"></i>
+              <img src="./assest/png/untitled (4).png" alt="">
             </div>
             <p class="tc-text">
               Отдел качества, следит за качеством работ на каждом объекте
@@ -179,7 +202,7 @@
           </div>
           <div class="tc-item">
             <div class="tc-icon">
-              <i class="fas fa-phone"></i>
+              <img src="./assest/png/untitled (5).png" alt="">
             </div>
             <p class="tc-text">
               Отдел качества, следит за качеством работ на каждом объекте
@@ -261,7 +284,7 @@
             <p>
               Уборка коммерческой недвижимости
             </p>
-            <a href="#">
+            <a data-bs-toggle="modal" href="#podrobniBtn" role="button">
               Подробнее
               <span></span>
             </a>
@@ -273,7 +296,7 @@
             <p>
               Уборка коммерческой недвижимости
             </p>
-            <a href="#">
+            <a data-bs-toggle="modal" href="#podrobniBtn" role="button">
               Подробнее
               <span></span>
             </a>
@@ -284,7 +307,7 @@
             <p>
               Уборка коммерческой недвижимости
             </p>
-            <a href="#">
+            <a data-bs-toggle="modal" href="#podrobniBtn" role="button">
               Подробнее
               <span></span>
             </a>
@@ -295,7 +318,7 @@
             <p>
               Уборка коммерческой недвижимости
             </p>
-            <a href="#">
+            <a data-bs-toggle="modal" href="#podrobniBtn" role="button">
               Подробнее
               <span></span>
             </a>
@@ -306,7 +329,7 @@
             <p>
               Уборка коммерческой недвижимости
             </p>
-            <a href="#">
+            <a data-bs-toggle="modal" href="#podrobniBtn" role="button">
               Подробнее
               <span></span>
             </a>
@@ -317,12 +340,27 @@
             <p>
               Уборка коммерческой недвижимости
             </p>
-            <a href="#">
+            <a data-bs-toggle="modal" href="#podrobniBtn" role="button">
               Подробнее
               <span></span>
             </a>
           </div>
         </div>
+          <div class="nashi-usluga-modal">
+                <div class="modal fade" id="podrobniBtn" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+     <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <span class="close-bg">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </span>
+        
+        <div class="modal-body">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi repellat vitae quod quidem praesentium perspiciatis in inventore placeat esse sequi dignissimos maxime doloribus obcaecati doloremque commodi, laboriosam repellendus debitis reiciendis error dolorum? Rerum non minus at officia soluta earum fugiat corrupti magni eius cum debitis aut, a recusandae! Est a aut quisquam ipsam veritatis tenetur. Ratione quas itaque quae quod totam necessitatibus ab, repudiandae similique facilis nihil facere unde dignissimos cumque vero, architecto officia culpa eveniet, minus sunt in ea sed dicta quaerat? Nihil, asperiores molestias. Sint fuga dolorem commodi fugiat at doloribus, vero aliquid? Et praesentium enim tenetur animi odio sint dignissimos harum esse labore eos, sequi maxime laboriosam cupiditate ab sapiente veniam neque veritatis minima modi obcaecati hic!
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
       </div>
     </section>
 
@@ -333,7 +371,7 @@
             <h2>
               Подготовим персональное <br>предложение для вашей компании
             </h2>
-            <a href="#">
+            <a href="#" class="pb-btn">
               Оставьте заявку
             </a>
             
@@ -462,6 +500,11 @@
   </a>
           </div>
         </div>
+        <div style="text-align: center; margin: 50px auto;">
+          <a href="#" class="pb-btn" style="display: inline-block;" >
+          Все клиенты
+        </a>
+        </div>
       </div>
     </section>
 
@@ -472,7 +515,7 @@
             <h2>
               Подготовим персональное <br>предложение для вашей компании
             </h2>
-            <a href="#">
+            <a href="#" class="pb-btn">
               Оставьте заявку
             </a>
             
@@ -500,7 +543,14 @@
                   </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  <div class="accordion-body">
+                      <ul>
+                        <li><span>Офисов</span><span>от 15150 руб./месяц</span></li>
+                        <li><span>Складских помещений</span><span>от 30 руб./м <sup>2</sup> в месяц</span></li>
+                        <li><span>Производств</span><span>от 30 руб./м <sup>2</sup> в месяц</span></li>
+                        <li><span>Квартир</span><span>от 13000 руб.</span></li>
+                      </ul>
+                  </div>
                 </div>
               </div>
               <div class="accordion-item">
@@ -514,7 +564,12 @@
                   </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  <div class="accordion-body"> <ul>
+                      <li><span>Офисов</span><span>от 15150 руб./месяц</span></li>
+                      <li><span>Складских помещений</span><span>от 30 руб./м <sup>2</sup> в месяц</span></li>
+                      <li><span>Производств</span><span>от 30 руб./м <sup>2</sup> в месяц</span></li>
+                      <li><span>Квартир</span><span>от 13000 руб.</span></li>
+                    </ul></div>
                 </div>
               </div>
               <div class="accordion-item">
@@ -528,7 +583,12 @@
                   </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  <div class="accordion-body"> <ul>
+                      <li><span>Офисов</span><span>от 15150 руб./месяц</span></li>
+                      <li><span>Складских помещений</span><span>от 30 руб./м <sup>2</sup> в месяц</span></li>
+                      <li><span>Производств</span><span>от 30 руб./м <sup>2</sup> в месяц</span></li>
+                      <li><span>Квартир</span><span>от 13000 руб.</span></li>
+                    </ul></div>
                 </div>
               </div>
           </div>
@@ -728,48 +788,7 @@
                   <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Ежедневная уборка 
-                     <span class="plus" >
-                      <div class="row"></div>
-                      <div class="col"></div>
-                    </span>
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Уборка после ремонта 
-                    <span class="plus" >
-                      <div class="row"></div>
-                      <div class="col"></div>
-                    </span>
-                  </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Мойка остекления и фасадов
-                     <span class="plus" >
-                      <div class="row"></div>
-                      <div class="col"></div>
-                    </span>
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                </div>
-              </div>
+
           </div>
       </div>
     </section>
@@ -783,7 +802,7 @@
             <h2>
               Не знаете с чего начать?  <br>Оставьте заявку и мы расскажем!
             </h2>
-            <a href="#">
+            <a href="#" class="pb-btn">
               Оставьте заявку
             </a>
             
@@ -951,7 +970,7 @@
 
     <footer>
 	<div class="container-fluid">
-		<div class="row">
+		<div class="row container">
 			<div class="col-lg-1"></div>
 			<div class="col-lg-10 col-md-12 col-sm-12 col-12">
 				<div class="row">
@@ -961,13 +980,13 @@
 							<div class="contact-info-phones">
 								<p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+78122425031"><span class="new-phone">8 (812) 747-81-43</span></a></p>							</div>
 							<div class="contact-info-map">
-								<p><i class="fa fa-map-marker" aria-hidden="true"></i>Санкт - Петербург, ул. Профессора Попова, д.8</p>							</div>
+								<p><i class="fas fa-map-marker-alt"></i>Санкт - Петербург, ул. Профессора Попова, д.8</p>							</div>
 							<div class="contact-info-mail selectMust">
 								<p class="selectMust">
-	<i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:info9@cleanfield.ru" class="selectMust">info9@cleanfield.ru</a>
+	<i class="far fa-envelope"></i><a href="mailto:info9@cleanfield.ru" class="selectMust">info9@cleanfield.ru</a>
 </p>							</div>
 							<div class="contact-info-time">
-								<i class="fa fa-clock-o contacts-page-fa" aria-hidden="true"></i><p>
+								<i class="far fa-clock"></i><p>
 	Ежедневно: <br>
 	с 8-00 до 22-00
 </p>							</div>
@@ -978,12 +997,11 @@
 						<div class="white-title">Полезные разделы</div>
 						<div class="footer-services">
 						  <ul>
-						    <li><a href="/o-kompanii/">О нас</a></li>
-						    <li><a href="/kontakty/">Контакты</a></li>
-						    <li><a href="/otzyvy/">Отзывы</a></li>
-						    <li><a href="/voprosy-otvety/">Вопрос-ответ</a></li>
-						    <li><a href="/stati/">Статьи</a></li>
-						    <li><a href="/novosti/">Новости</a></li>
+						    <li><a href="#why_cleanfield">О нас</a></li>
+              <li><a href="#reviews">Отзывы</a></li>
+              <li><a href="#kontakt">Контакты</a></li>
+						    <li><a href="#question">Вопрос-ответ</a></li>
+						    <li><a href="#">Статьи</a></li>
 						  </ul>
 						</div>
 											</div>
@@ -1048,8 +1066,27 @@
 
 </div></footer>
 
+<div class="modal-calling-con">
+  <div class="modal-calling">
+    <button class="close-calling">+</button>
+    <h4>
+      Хотите перезвоним вам за 40 секунд
+    </h4>
+    <p>Ты можете выбрать подразделение из которого вам перезвонит контекст</p>
+    <div class="inputs">
+      <input type="text">
+      <button class="btn-call">Жду звонка</button>
+      <h4 class="h4-timer">00:39</h4>
+    </div>
+    <p>Свободных операторов на линии: 2</p>
+    <p>В процессе разговора с клиентоми: 0</p>
+    <p>Обслуживание вызовов за сегодня: 4</p>
+  </div>
+</div>
+
+
+
 <a href="#"  class="fixid">
-  
 </a>
 
 
@@ -1060,15 +1097,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <div class="btn-hover-eff">
-      <a href="">Оставьте заявку
-      <span class="btn-hov-1 blue-hover"></span>
-      <span class="btn-hov-2 blue-hover "></span>
-      <span class="btn-hov-3 blue-hover "  ></span>
-      <span class="btn-hov-4 blue-hover "></span>
-
-      </a>
-
-    </div>
+    
   </body>
 </html>
