@@ -574,6 +574,19 @@ footer .developer p a {
 }
 @media (max-width: 750px) {
   .modal-calling-con .modal-calling {
+    width: 450px;
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .modal-calling-con .modal-calling {
+    width: 350px;
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .modal-calling-con .modal-calling {
+    width: 300px;
     width: 100%;
   }
 }
