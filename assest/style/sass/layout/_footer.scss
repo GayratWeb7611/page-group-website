@@ -8,7 +8,7 @@ margin-top: 100px;
 li{
     font-size: 14px;
     color: #828181;
-    font-family: "RobotoLight";
+    font-family: 'Roboto Mono', monospace;
     margin-bottom: 20px;
     position: relative;
    a{
@@ -24,7 +24,7 @@ li{
     line-height: 24px;
     padding-bottom: 30px;
     margin-bottom: 30px;
-
+    font-family: 'Oswald', sans-serif;
     @media (max-width:768) {
         padding-bottom: 0px;
         font-size: 20px;
@@ -47,6 +47,10 @@ li{
         i{
             padding-right: 10px;
         }
+    }
+    p,a{
+    font-family: 'Roboto Mono'!important;
+
     }
     .contact-info-phones{
         font-size: 18px;

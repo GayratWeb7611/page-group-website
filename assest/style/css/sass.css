@@ -403,7 +403,7 @@ footer {
 footer li {
   font-size: 14px;
   color: #828181;
-  font-family: "RobotoLight";
+  font-family: "Roboto Mono", monospace;
   margin-bottom: 20px;
   position: relative;
 }
@@ -417,6 +417,7 @@ footer .white-title {
   line-height: 24px;
   padding-bottom: 30px;
   margin-bottom: 30px;
+  font-family: "Oswald", sans-serif;
 }
 @media (max-width: 768) {
   footer .white-title {
@@ -440,6 +441,9 @@ footer .contact-info .contact-info-phones, footer .contact-info .contact-info-ma
 }
 footer .contact-info .contact-info-phones i, footer .contact-info .contact-info-mail i, footer .contact-info .contact-info-map i, footer .contact-info .contact-info-time i {
   padding-right: 10px;
+}
+footer .contact-info p, footer .contact-info a {
+  font-family: "Roboto Mono" !important;
 }
 footer .contact-info .contact-info-phones {
   font-size: 18px;
@@ -1344,7 +1348,7 @@ section#leave-form .l-f-body form .input-group .l-f-input-container .l-f-input:f
   border-color: #fff;
 }
 section#leave-form .l-f-body form .input-group .l-f-input-container .l-f-input:focus + .l-f-label {
-  top: 8px;
+  top: 11px;
 }
 section#leave-form .l-f-body form .input-group .l-f-input-container .l-f-label {
   padding-left: 11px;
