@@ -579,23 +579,19 @@ footer .developer p a {
   padding: 50px;
   border: 1px solid #7ee000;
   border-radius: 20px;
+  overflow-y: auto;
 }
-@media (max-width: 750px) {
+@media (max-width: 757px) {
   .modal-calling-con .modal-calling {
-    width: 450px;
-    width: 100%;
-  }
-}
-@media (max-width: 550px) {
-  .modal-calling-con .modal-calling {
-    width: 350px;
-    width: 100%;
+    width: 90%;
+    padding: 20px;
+    height: auto;
   }
 }
 @media (max-width: 450px) {
   .modal-calling-con .modal-calling {
-    width: 300px;
-    width: 100%;
+    width: 98%;
+    height: auto;
   }
 }
 .modal-calling-con .modal-calling .close-calling {
@@ -624,6 +620,11 @@ footer .developer p a {
   background: #fafafa;
   padding: 3px 5px;
 }
+@media (max-width: 575px) {
+  .modal-calling-con .modal-calling .inputs input {
+    width: 20%;
+  }
+}
 .modal-calling-con .modal-calling .inputs .btn-call {
   all: unset;
   padding: 3px 10px;
@@ -633,16 +634,32 @@ footer .developer p a {
   color: #fff;
   transition: 0.7s;
 }
+@media (max-width: 575px) {
+  .modal-calling-con .modal-calling .inputs .btn-call {
+    padding: 2px 5px;
+    font-size: 15px;
+  }
+}
 .modal-calling-con .modal-calling .inputs .btn-call:hover {
   background: #31c1f9;
 }
 .modal-calling-con .modal-calling .inputs h4 {
   display: inline-block;
 }
+@media (max-width: 575px) {
+  .modal-calling-con .modal-calling .inputs h4 {
+    font-size: 24px;
+  }
+}
 .modal-calling-con .modal-calling p {
   font-size: 18px;
   margin: 0;
   padding: 0;
+}
+@media (max-width: 550px) {
+  .modal-calling-con .modal-calling p {
+    font-size: 15px;
+  }
 }
 
 section#showcase .show-container {
