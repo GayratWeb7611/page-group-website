@@ -216,7 +216,7 @@ header {
   top: 0;
 }
 header .header-container {
-  padding: 0 100px;
+  padding: 0 90px;
 }
 @media (max-width: 850px) {
   header .header-container {
@@ -241,7 +241,7 @@ header .header-top {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
 }
 @media (max-width: 770px) {
   header .header-top {
@@ -284,10 +284,14 @@ header .header-top .contact {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  align-items: center;
 }
 header .header-top .contact a {
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 18px;
+  color: #303030;
+  font-family: "Inter";
+  padding: 0 5px;
 }
 header .header-top .contact a:hover {
   color: inherit;
@@ -421,6 +425,7 @@ footer .white-title {
   padding-bottom: 30px;
   margin-bottom: 30px;
   font-family: "Oswald", sans-serif;
+  height: 40px;
 }
 @media (max-width: 768) {
   footer .white-title {
