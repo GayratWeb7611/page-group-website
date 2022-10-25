@@ -52,7 +52,36 @@
             <a href="tel:+998900077611" class="phone-icon">
               <i class="fas fa-phone-alt"></i>
             </a>
-            <div class="header-modal">
+            
+            <a  class="btn button" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                Заказать звонок
+            </a>
+
+          </div>
+          <div class="drop-menu">
+            <button class="dropDown" >
+              <i class="fas fa-bars x-menu "></i>
+            </button>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <nav >
+            <ul class=" dropMenu d-flex m-0 p-0 flex-wrap justify-content-between py-3">
+              <li><a href="#why_cleanfield">О компании</a></li>
+              <li><a href="#n-usluga">Услуги</a></li>
+              <li><a href="#price">Цены</a></li>
+              <li><a href="#">Наши работы</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#reviews">Отзывы</a></li>
+              <li><a href="#kontakt">Контакты</a></li>
+              <li><a href="#">Статьи</a></li>
+              <li><a href="#question">Вопросы-ответы</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="header-modal">
                 <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
      <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -90,34 +119,6 @@
   </div>
 </div>
             </div>
-            <a  class="btn button" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
-                Заказать звонок
-            </a>
-
-          </div>
-          <div class="drop-menu">
-            <button class="dropDown" >
-              <i class="fas fa-bars x-menu "></i>
-            </button>
-          </div>
-        </div>
-        <div class="header-bottom">
-          <nav >
-            <ul class=" dropMenu d-flex m-0 p-0 flex-wrap justify-content-between py-3">
-              <li><a href="#why_cleanfield">О компании</a></li>
-              <li><a href="#n-usluga">Услуги</a></li>
-              <li><a href="#price">Цены</a></li>
-              <li><a href="#">Наши работы</a></li>
-              <li><a href="#">Акции</a></li>
-              <li><a href="#reviews">Отзывы</a></li>
-              <li><a href="#kontakt">Контакты</a></li>
-              <li><a href="#">Статьи</a></li>
-              <li><a href="#question">Вопросы-ответы</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
     <div class="drop-close"></div>
 
  
@@ -248,9 +249,9 @@
               </p>
             </div>
             <div class="l-f-input-container required">
-              <input type="text" name="number"  class="l-f-input required-input" required >
+              <input type="number" name="number"  class="l-f-input required-input" required >
               <div class="l-f-label">
-                Имя
+                Телефон 
                 <span>*</span>
               </div>
               <p class="required-message">
@@ -434,10 +435,10 @@
       <div class="container">
         <h1 class="title" >Наши клиенты</h1>
         <div class="client-body">
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div id="carouselControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <div class="carousel-card ">
+      <div class="carousel-card">
         <div class="carousel-img">
           <img  src="https://cleanfield.ru/upload/iblock/d38/ywwnj5fc1p2m2myrktd4z9s4g9x3e26v.jpg" alt="First slide">
         </div>
@@ -455,7 +456,7 @@
     <div class="carousel-item ">
       <div class="carousel-card ">
         <div class="carousel-img">
-          <img  src="" alt="First slide">
+          <img  src="https://cleanfield.ru/upload/iblock/d38/ywwnj5fc1p2m2myrktd4z9s4g9x3e26v.jpg" alt="First slide">
         </div>
       <div class="carousel-desc">
         <ul>
@@ -469,7 +470,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <div class="carousel-card ">
+      <div class="carousel-card">
         <div class="carousel-img">
           <img  src="https://cleanfield.ru/upload/iblock/782/ex041lzm8xdwsz5j1et8gtkuw7t0dgkv.jpg" alt="First slide">
         </div>
@@ -486,11 +487,11 @@
     </div>
   
   </div>
-  <a class="carousel-control-prev prev " href="#carouselExampleControls" role="button" data-slide="prev">
+  <button class="carousel-control-prev prev "  role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next next" href="#carouselExampleControls" role="button" data-slide="next">
+  </button>
+  <a class="carousel-control-next next"  role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -713,9 +714,9 @@
               </p>
             </div>
             <div class="l-f-input-container required">
-              <input type="text" name="number"  class="l-f-input required-input" required >
+              <input type="number" name="number"  class="l-f-input required-input" required >
               <div class="l-f-label">
-                Имя
+                Телефон 
                 <span>*</span>
               </div>
               <p class="required-message">
@@ -942,10 +943,10 @@
               </p>
             </div>
             <div class="l-f-input-container required">
-              <input type="text" name="number"  class="l-f-input required-input" required >
+              <input type="number" name="number"  class="l-f-input required-input" required >
               <div class="l-f-label">
-                Имя
-                <span>*</span>
+                  Телефон
+                  <span>*</span>
               </div>
               <p class="required-message">
                 ❕ Поле обязательно для заполнения

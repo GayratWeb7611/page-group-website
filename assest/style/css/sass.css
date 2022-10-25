@@ -211,7 +211,7 @@ img {
 }
 
 header {
-  z-index: 982340;
+  z-index: 100;
   position: sticky;
   top: 0;
 }
@@ -241,6 +241,7 @@ header .header-top {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 10px;
 }
 @media (max-width: 770px) {
   header .header-top {
@@ -282,9 +283,11 @@ header .header-top .location {
 header .header-top .contact {
   display: flex;
   flex-wrap: wrap;
+  gap: 5px;
 }
 header .header-top .contact a {
   font-weight: bold;
+  font-size: 18px;
 }
 header .header-top .contact a:hover {
   color: inherit;
@@ -1361,7 +1364,7 @@ section#leave-form .l-f-body form .input-group .l-f-input-container .l-f-input:f
   border-color: #fff;
 }
 section#leave-form .l-f-body form .input-group .l-f-input-container .l-f-input:focus + .l-f-label {
-  top: 11px;
+  top: 14px;
 }
 section#leave-form .l-f-body form .input-group .l-f-input-container .l-f-label {
   padding-left: 11px;

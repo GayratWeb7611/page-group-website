@@ -33,3 +33,23 @@ callModalClose.addEventListener('click',()=>{
     callModal.style.display = 'none'
 
 })
+
+
+let inputs = document.querySelectorAll('.l-f-input')
+let inputLabel = document.querySelectorAll('.l-f-label')
+
+inputs.forEach((input , index) => {
+    input.parentElement.classList.remove('required')
+    input.addEventListener("blur",()=>{
+        if(input.value == ''){
+            input.parentElement.classList.add('required');
+        }else{
+            console.log(input.value.length);
+            input.parentElement.classList.remove('required');
+            inputLabel[index].style.top = '14px'
+        }
+    })
+    input.addEventListener('focus',()=>{
+        input.parentElement.classList.remove('required');
+    })
+});
