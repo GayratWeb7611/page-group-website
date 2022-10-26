@@ -101,6 +101,7 @@ img {
 .accordion{
             border-radius: 30px;
             overflow: hidden;
+            
             .accordion-item{
                 button.accordion-button{
                     padding: 28px 30px;
@@ -109,6 +110,7 @@ img {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    gap: 30px;
                    &:focus{
                     box-shadow: none;
                    }

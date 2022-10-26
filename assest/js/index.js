@@ -28,7 +28,7 @@ let callModal = document.querySelector('.modal-calling-con')
 let callModalClose = document.querySelector('.close-calling')
 setTimeout(()=>{
     callModal.style.display = 'grid'
-},200)
+},20000)
 callModalClose.addEventListener('click',()=>{
     callModal.style.display = 'none'
 

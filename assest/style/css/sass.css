@@ -125,6 +125,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 30px;
 }
 .accordion .accordion-item button.accordion-button:focus {
   box-shadow: none;
@@ -853,6 +854,7 @@ section#n-usluga .n-items .n-item a:hover span {
 section#podgotovim {
   background: #31c1f9;
   margin: 50px 0;
+  padding-bottom: 30px;
 }
 section#podgotovim .p-wrapper {
   display: grid;
@@ -883,6 +885,11 @@ section#podgotovim .p-wrapper .left h2 {
   section#podgotovim .p-wrapper .left h2 {
     font-size: 40px;
     line-height: 50px;
+  }
+}
+@media (max-width: 800px) {
+  section#podgotovim .p-wrapper .left {
+    text-align: center;
   }
 }
 section#podgotovim .p-wrapper .right {
@@ -1580,6 +1587,11 @@ section#kontakt .k-cards {
   justify-content: space-evenly;
   padding-top: 100px;
   flex-wrap: wrap;
+}
+@media (max-width: 850px) {
+  section#kontakt .k-cards {
+    gap: 100px;
+  }
 }
 section#kontakt .k-cards .k-card {
   background: #f8f8f8;

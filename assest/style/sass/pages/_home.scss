@@ -177,6 +177,7 @@ section#n-usluga{
 section#podgotovim{
     background: $blue;
     margin: 50px 0;
+    padding-bottom: 30px;
     .p-wrapper{
         display: grid;
         grid-template-columns: 3fr 2fr;
@@ -203,6 +204,9 @@ section#podgotovim{
                 }
                  
             }
+             @media (max-width:800px) {
+               text-align: center;
+                }
         }
         
         .right{
@@ -871,6 +875,9 @@ section#kontakt{
         justify-content: space-evenly;
         padding-top: 100px;
         flex-wrap: wrap;
+        @media (max-width: 850px) {
+            gap: 100px;
+        }
         .k-card{
             background: #f8f8f8;
             border-radius: 20px;
