@@ -201,6 +201,70 @@ img {
   }
 }
 
+.btn-hov-eff {
+  width: fit-content;
+  background-color: #7ee000;
+  border: 1px solid #7ee000;
+  border-radius: 10px;
+  padding: 32px 90px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  transition: 1.5s;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  overflow: hidden;
+}
+@media (max-width: 950px) {
+  .btn-hov-eff {
+    line-height: 110%;
+    padding: 16px 45px;
+  }
+}
+.btn-hov-eff:hover {
+  border-color: #fff;
+  color: #fff;
+}
+.btn-hov-eff:hover .blue-btn {
+  top: 0;
+  transform: scale(2);
+}
+.btn-hov-eff .blue-btn {
+  width: 25%;
+  background: #31c1f9;
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+  top: 100%;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.btn-hov-eff .btn1 {
+  left: 0;
+}
+.btn-hov-eff .btn2 {
+  left: 25%;
+  transition-delay: 0.1s;
+}
+.btn-hov-eff .btn3 {
+  left: 50%;
+  transition-delay: 0.2s;
+}
+.btn-hov-eff .btn4 {
+  left: 75%;
+  transition-delay: 0.3s;
+}
+
 .drop-close {
   position: fixed;
   z-index: 38987;
@@ -760,7 +824,7 @@ section#second .tc-item-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 880px) {
+@media (max-width: 580px) {
   section#second .tc-item-wrapper {
     grid-template-columns: 1fr;
   }
@@ -896,6 +960,10 @@ section#podgotovim .p-wrapper .left h2 {
 @media (max-width: 800px) {
   section#podgotovim .p-wrapper .left {
     text-align: center;
+  }
+  section#podgotovim .p-wrapper .left a {
+    display: block;
+    margin: 20px auto;
   }
 }
 section#podgotovim .p-wrapper .right {
@@ -1139,7 +1207,7 @@ section#why_cleanfield .why-grid .six {
     flex-direction: row;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 756px) {
   section#why_cleanfield .why-grid .six {
     flex-direction: column;
   }
@@ -1175,7 +1243,6 @@ section#our-client .client-body .prev {
   height: 70px;
   top: 50%;
   transform: translateY(-50%);
-  left: -30px;
   border-radius: 50px;
   transition: 0.8s;
 }
@@ -1197,7 +1264,6 @@ section#our-client .client-body .next {
   height: 70px;
   top: 50%;
   transform: translateY(-50%);
-  right: -30px;
   border-radius: 50px;
   transition: 0.8s;
 }
@@ -1263,6 +1329,8 @@ section#price .accordion-body ul {
 section#price .accordion-body ul li {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid rgb(211, 202, 202);
+  padding: 5px 0;
 }
 
 section#reviews .container .r-cards {
@@ -1609,7 +1677,6 @@ section#kontakt .k-cards .k-card {
   text-align: center;
   margin: 20px 25px;
   padding: 20px;
-  padding-bottom: 0;
   max-width: 30%;
   min-width: 330px;
 }

@@ -194,3 +194,67 @@ img {
     }
     
             }
+
+.btn-hov-eff{
+  width: fit-content;
+    background-color: $green;
+    border: 1px solid $green;
+    border-radius: 10px;
+    padding: 32px 90px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    transition: 1.5s;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    overflow: hidden;
+    @media (max-width: 950px) {
+    line-height: 110%;
+    padding: 16px 45px;
+
+    }
+    &:hover{
+        border-color: $white;
+        color: $white;
+        .blue-btn{
+            top: 0;
+            transform: scale(2);
+        }    
+    }
+    .blue-btn{
+        width: 25%;
+        background: #31c1f9;
+        position: absolute;
+        height: 100%;
+
+        z-index: -1;
+        top: 100%;
+        transition: .4s;
+        border-radius: 50%;
+    }
+    .btn1{
+        left: 0;
+    }
+    .btn2{
+        left: 25%;
+        transition-delay: .1s;
+    }
+    .btn3{
+        left: 50%;
+        transition-delay: .2s;
+    }
+    .btn4{
+        left: 75%;
+        transition-delay: .3s;
+    }
+}

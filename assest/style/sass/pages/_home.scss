@@ -80,7 +80,7 @@ section#second{
         @media (max-width: 1200px) {
             grid-template-columns: repeat(2,1fr);
         }
-        @media (max-width: 880px) {
+        @media (max-width: 580px) {
             grid-template-columns: 1fr;
         }
         .tc-item{
@@ -206,6 +206,10 @@ section#podgotovim{
             }
              @media (max-width:800px) {
                text-align: center;
+               a{
+                display: block;
+                margin: 20px auto;
+               }
                 }
         }
         
@@ -426,7 +430,7 @@ section#why_cleanfield{
             grid-row: 7/9;
             flex-direction: row;
             }     
-            @media (max-width: 576px) {
+            @media (max-width: 756px) {
             flex-direction: column;
           br{
             display: none;
@@ -466,7 +470,6 @@ section#our-client{
             height: 70px;
             top: 50%;
             transform: translateY(-50%);
-            left: -30px;
             border-radius: 50px;
             transition: .8s;
             &:hover{
@@ -486,7 +489,6 @@ section#our-client{
             height: 70px;
             top: 50%;
             transform: translateY(-50%);
-            right: -30px;
             border-radius: 50px;
             transition: .8s;
             &:hover{
@@ -552,6 +554,8 @@ section#price{
             li{
                 display: flex;
                 justify-content: space-between;
+                border-bottom: 1px solid $grey;
+                padding: 5px 0;
             }
         }
     }
@@ -886,7 +890,6 @@ section#kontakt{
             text-align: center;
             margin: 20px 25px;
             padding: 20px;
-            padding-bottom: 0;
             max-width: 30%;
             min-width: 330px;
             @media (max-width: 1335px) {
