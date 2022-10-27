@@ -167,6 +167,10 @@ header{
     top: 97px;
     z-index: 99;
     background: $white;
+    display: none;
+    @media (max-width: 768px) {
+        display: block;
+    }
     .navbar-nav{
         .mini-nav{
                 li{

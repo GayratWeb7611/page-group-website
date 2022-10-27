@@ -392,6 +392,12 @@ header .header-bottom nav ul {
   top: 97px;
   z-index: 99;
   background: #fff;
+  display: none;
+}
+@media (max-width: 768px) {
+  .navbar-nav-container {
+    display: block;
+  }
 }
 .navbar-nav-container .navbar-nav .mini-nav li {
   font-size: 16px;
