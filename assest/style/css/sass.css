@@ -693,7 +693,7 @@ footer .developer p a {
 }
 @media (max-width: 575px) {
   .modal-calling-con .modal-calling .inputs input {
-    width: 20%;
+    width: 40%;
   }
 }
 .modal-calling-con .modal-calling .inputs .btn-call {
