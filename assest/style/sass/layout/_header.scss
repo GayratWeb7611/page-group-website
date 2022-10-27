@@ -150,26 +150,32 @@ header{
                 font-size: 16px;
                 font-family: 'Inter', sans-serif;
                 transition: .6s;
-                @media (max-width: 768px) {
-                display: inline-block!important;
-                position: absolute;
-                right: -100%;
-                background-color: $white;
-                width: 50%;
+            }
+            @media (max-width: 768px) {
+             display: none;
+            }
+         
+        }
+    }
+}
+
+//mobile navbar
+
+.navbar-nav-container{
+    padding: 0;
+    position: sticky;
+    top: 97px;
+    z-index: 99;
+    background: $white;
+    .navbar-nav{
+        .mini-nav{
                 li{
-                    
-                    padding: 5px 20px;
+                    font-size: 16px;
+                    padding: 5px 0;
                     a{
-                        border-top: 1px solid $grey;
+                        border-bottom: 1px solid #f2f2f2;
                         padding: 5px 0;
                     }
-                }
-                }
-            }
-            ul.toggleNav{
-                @media (max-width: 768px) {
-                    right: 0%;
-                }
                 }
         }
     }

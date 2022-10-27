@@ -457,15 +457,16 @@ section#why_cleanfield{
 
 section#our-client{
     .client-body{
+        overflow: hidden;
         .prev{
             opacity: 1;
             background: $blue;
             color: $white;
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             top: 50%;
             transform: translateY(-50%);
-            left: -50px;
+            left: -30px;
             border-radius: 50px;
             transition: .8s;
             &:hover{
@@ -474,18 +475,18 @@ section#our-client{
             @media (max-width: 1050px) {
                 top: 25%;
                    width: 60px;
-            height: 60px;
+                    height: 60px;
             }
         }
         .next{
             opacity: 1;
             background: $blue;
             color: $white;
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             top: 50%;
             transform: translateY(-50%);
-            right: -50px;
+            right: -30px;
             border-radius: 50px;
             transition: .8s;
             &:hover{
@@ -504,6 +505,7 @@ section#our-client{
             gap: 20px;
             background: #f9f9f9;
             border-radius: 30px;
+            overflow: hidden;
             @media (max-width: 1050px) {
                 grid-template-columns: 1fr;
                 

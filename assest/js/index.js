@@ -3,17 +3,8 @@ let dropMenu = document.querySelector('.dropMenu')
 let xMenu = document.querySelector('.x-menu')
 let closeMenu = document.querySelector('.drop-close')
 dropDown.addEventListener('click', ()=>{
-    dropMenu.classList.toggle('toggleNav')
-    console.log(dropMenu.classList.contains('toggleNav'));
-    if(dropMenu.classList.contains('toggleNav')){
-        xMenu.classList.remove('fa-bars')
-        xMenu.classList.add('fa-times')
-        closeMenu.style.display = 'block'
-    }else{
-        xMenu.classList.add('fa-bars')
-        xMenu.classList.remove('fa-times')
-        closeMenu.style.display = 'none'
-    }
+        xMenu.classList.toggle('fa-times')
+        xMenu.classList.toggle('fa-bars')
 })
 
 closeMenu.addEventListener('click',()=>{
