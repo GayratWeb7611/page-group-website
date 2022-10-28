@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Group</title>
+    <!-- bootstrap onli -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <!-- css onli -->
+    <link rel="stylesheet" href="./assest/style/css/sass.css" />
+    <!-- font onli -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;700&family=Open+Sans&family=Oswald&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+  </head>
+<body>
+
+    <header class="bg-white" >
+      <div class="container header-container">
+        <div class="header-top ">
+          <div class="logo">
+            <a href="/">
+              <img src="./assest/imgs/logo.jpg" alt="logo">
+            </a>
+          </div>
+          <div class="location">
+            <p class="p-0 m-0">
+              <i class="fas fa-map-marker-alt"></i>
+              Санкт-Петербург, ул. Профессора Попова, д.8
+            </p>
+          </div>
+
+          <div class="email">
+            <a href="mailto: gsattorov0102@mail.ru">gsattorov0102@mail.ru</a>
+          </div>
+          <div class="contact  ">
+            <a href="tel:+998900077611">8 (90) 007 76 11</a>
+            <a href="tel:+998900077611" class="phone-icon">
+              <i class="fas fa-phone-alt"></i>
+            </a>
+            
+            <a  class="btn button" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                Заказать звонок
+            </a>
+
+          </div>
+          <div class="drop-menu">
+            <button class="navbar-toggler dropDown" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars x-menu "></i>
+        </button>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <nav >
+            <ul class=" dropMenu d-flex m-0 p-0 flex-wrap justify-content-between py-3">
+              <li><a href="#why_cleanfield">О компании</a></li>
+              <li><a href="#n-usluga">Услуги</a></li>
+              <li><a href="#price">Цены</a></li>
+              <li><a href="#">Наши работы</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#reviews">Отзывы</a></li>
+              <li><a href="#kontakt">Контакты</a></li>
+              <li><a href="#">Статьи</a></li>
+              <li><a href="#question">Вопросы-ответы</a></li>
+            </ul>
+          </nav>
+          
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-nav-container navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <ul class="mini-nav">
+              <li><a href="#why_cleanfield">О компании</a></li>
+              <li><a href="#n-usluga">Услуги</a></li>
+              <li><a href="#price">Цены</a></li>
+              <li><a href="#">Наши работы</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#reviews">Отзывы</a></li>
+              <li><a href="#kontakt">Контакты</a></li>
+              <li><a href="#">Статьи</a></li>
+              <li><a href="#question">Вопросы-ответы</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="header-modal">
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+     <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <span class="close-bg">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </span>
+        
+        <div class="modal-body">
+          <form action="">
+              <input type="text" class="input-text" placeholder="Ваше имя ">
+              <input type="number" class="input-text" placeholder="Ваш телефон "> <br>
+              <input type="checkbox" class="checkbox-input"  name="#" id="checked">
+              <label for="checked" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Нажимая кнопку «Жду звонка», я даю свое согласие на обработку моих
+  персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей,
+  определенных в Согласии на обработку персональных данных</label>
+  <button class="btn">Жду звонка</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <span class="close-bg">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </span>
+      <div class="modal-body">
+        Hide this modal and show the first with the button below.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ex maxime unde voluptas illum alias, dignissimos iure quos atque a. Quod veritatis, possimus laborum illo nisi labore voluptas minus consequatur officia rem aspernatur unde iste voluptatem accusantium dolores recusandae deserunt sunt optio corrupti doloribus ab temporibus dicta? Aliquid, cupiditate delectus reiciendis nostrum quibusdam iure at amet nihil magni dignissimos earum esse? Inventore dolorum saepe quis recusandae, praesentium laboriosam error ipsa, dolores quos beatae sed veniam, molestiae aperiam unde! Totam quos nemo nisi deleniti cum, molestias ducimus necessitatibus doloribus ut qui fugit quod, eius animi ipsum cupiditate labore voluptatum nihil laborum iure culpa deserunt dolor? Voluptates quaerat repellendus soluta quidem dolorum atque maiores perferendis eveniet numquam laboriosam. Placeat, quis? Iusto, repudiandae.
+      </div>
+<button type="button" class=" btn-prinimayu" data-bs-dismiss="modal" aria-label="Close">Принимаю</button>
+<label for="checked" type="button" class="btn-prinimayu for-bg" data-bs-dismiss="modal" aria-label="Close">Не принимаю</label>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="drop-close"></div>
+
+ 
+
+
+
+
+  <section id="stati" >
+    <h1 class="gray-title">
+		 Статьи	
+    </h1>
+    <div class="container">
+      <div class="stati-nav">
+        <a href="#">Клининг</a>
+        <a href="#">Мойка стекол и зеркал</a>
+        <a href="#">Уборка жилых помещений</a>
+        <a href="#">Уборка коммерческих помещений</a>
+        <a href="#">Уход за полом</a>
+        <a href="#">Химчистка</a>
+      </div>
+
+      <div class="stati-cards">
+        <div class="stati-card">
+          <a href="">
+            <img src="https://cleanfield.ru/upload/iblock/51c/jpadxmscvr9ojgt11itf4ey4u4rep2ht.jpg" alt="">
+          </a>
+          <a href="">
+            <h2>Правила уборки офисных помещений</h2>
+          </a>
+          <a href="">
+            <p>У уборки офисов есть своя специфика. Она связана с тем, что каждый день через них проходит множество людей, поэтому состояние помещений оставляет желать лучшего. Чтобы привести их в порядок, необходимо правильно выбрать методы очистки и рассчитать время так, чтобы не нарушить график работы организации.</p>
+          </a>
+        </div>
+        <div class="stati-card">
+          <a href="">
+            <img src="https://cleanfield.ru/upload/iblock/51c/jpadxmscvr9ojgt11itf4ey4u4rep2ht.jpg" alt="">
+          </a>
+          <a href="">
+            <h2>Правила уборки офисных помещений</h2>
+          </a>
+          <a href="">
+            <p>У уборки офисов есть своя специфика. Она связана с тем, что каждый день через них проходит множество людей, поэтому состояние помещений оставляет желать лучшего. Чтобы привести их в порядок, необходимо правильно выбрать методы очистки и рассчитать время так, чтобы не нарушить график работы организации.</p>
+          </a>
+        </div>
+        <div class="stati-card">
+          <a href="">
+            <img src="https://cleanfield.ru/upload/iblock/51c/jpadxmscvr9ojgt11itf4ey4u4rep2ht.jpg" alt="">
+          </a>
+          <a href="">
+            <h2>Правила уборки офисных помещений</h2>
+          </a>
+          <a href="">
+            <p>У уборки офисов есть своя специфика. Она связана с тем, что каждый день через них проходит множество людей, поэтому состояние помещений оставляет желать лучшего. Чтобы привести их в порядок, необходимо правильно выбрать методы очистки и рассчитать время так, чтобы не нарушить график работы организации.</p>
+          </a>
+        </div>
+        <div class="stati-card">
+          <a href="">
+            <img src="https://cleanfield.ru/upload/iblock/51c/jpadxmscvr9ojgt11itf4ey4u4rep2ht.jpg" alt="">
+          </a>
+          <a href="">
+            <h2>Правила уборки офисных помещений</h2>
+          </a>
+          <a href="">
+            <p>У уборки офисов есть своя специфика. Она связана с тем, что каждый день через них проходит множество людей, поэтому состояние помещений оставляет желать лучшего. Чтобы привести их в порядок, необходимо правильно выбрать методы очистки и рассчитать время так, чтобы не нарушить график работы организации.</p>
+          </a>
+        </div>
+        <div class="stati-card">
+          <a href="">
+            <img src="https://cleanfield.ru/upload/iblock/51c/jpadxmscvr9ojgt11itf4ey4u4rep2ht.jpg" alt="">
+          </a>
+          <a href="">
+            <h2>Правила уборки офисных помещений</h2>
+          </a>
+          <a href="">
+            <p>У уборки офисов есть своя специфика. Она связана с тем, что каждый день через них проходит множество людей, поэтому состояние помещений оставляет желать лучшего. Чтобы привести их в порядок, необходимо правильно выбрать методы очистки и рассчитать время так, чтобы не нарушить график работы организации.</p>
+          </a>
+        </div>
+      </div>
+      <div class="stati-pagination">
+        <p>Новости 	1 - 12 из 36</p>
+        <p >
+			Начало | Пред. |
+					<b>1</b>
+					<a href="/stati/?PAGEN_1=2">2</a>
+					<a href="/stati/?PAGEN_1=3">3</a> |	<a href="/stati/?PAGEN_1=2">След.</a> | <a href="/stati/?PAGEN_1=3">Конец</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pravila-uborka" >
+
+    <h1 class="gray-title">
+      Правила уборки офисных помещений
+    </h1>
+
+    <div class="container">
+      <div class="pravila-cards">
+      <div class="pravila-card">
+
+        <img src="https://cleanfield.ru/upload/iblock/51c/jpadxmscvr9ojgt11itf4ey4u4rep2ht.jpg" alt="">
+        <p>Регулярная и качественная уборка офиса — неотъемлемое условие для комфортной работы сотрудников и деловой обстановки. Поддерживать порядок, чистоту и гигиену в кабинетах, open space, служебных помещениях, санузлах нужно постоянно, учитывая особенности конкретного объекта и индивидуальные запросы.</p>
+        <p>У уборки офисов есть своя специфика. Она связана с тем, что каждый день через них проходит множество людей, поэтому состояние помещений оставляет желать лучшего. Чтобы привести их в порядок, необходимо правильно выбрать методы очистки и рассчитать время так, чтобы не нарушить график работы организации.</p>
+      <h2>Для чего нужна уборка помещений в офисе от клининговой компании</h2>
+      <p>Офисным помещениям нужен квалифицированный подход, современные и экологичные технологии клининга и дезинфекции. Методы, подразумевающие применение только ведра, воды, швабры и простой бытовой химии, устарели.</p>
+      <p>Это связано с особенностями эксплуатации и отделки офисов:</p>
+      <ul>
+        <li><p>В современных офисах используют различные напольные покрытия и материалы — натуральный и искусственный камень, дерево и его имитацию, текстиль, винил и другие. Неправильно подобранные средства и устаревший инвентарь портят чувствительные поверхности, распределяют грязь на полу вместо полного её удаления, оставляют белый налет и липкую пленку.</p></li>
+        <li><p>В помещениях большая проходимость и много контактных поверхностей, где скапливается больше всего бактерий и вирусов — двери, столы, перила лестниц, стулья, кресла и диваны. Чтобы соблюдать санитарные требования и обеспечить безопасность для сотрудников и клиентов нужна дезинфекция и профессиональные пароочистители.</p></li>
+        <li>
+          <p>
+            Рабочий персонал должен учитывать временной фактор. Выбирать мокрую уборку, начинать её в офисе, где ещё присутствуют служащие и посетители, или делать перед самым открытием не рекомендуется. Это сильно повышает риск поскользнуться на твердом напольном покрытии в кабинете, коридоре, кухне или санузле и разнести грязь.
+          </p>
+        </li>
+
+      </ul>
+      <p>Уборка должна быть рациональной по соотношению затрат времени на поддержание должного уровня чистоты и стоимости услуг клининговой компании.</p>
+    </div>
+      <div class="pravila-card">
+
+        <img src="https://cleanfield.ru/upload/medialibrary/bc0/9ubfg11ulvmu1p5k572ru2ddkf5wmvth.jpg" alt="">
+        <h2>Правила и требования к уборке офисов</h2>
+        <p>Основные правила уборки офисных помещений едины. Они не зависят от размеров офиса, проходимости и интенсивности загрязнений, вида клининга.</p>
+        <p>Четыре главных правила уборки офисов:</p>
+        <ul>
+          <li>
+            <p>
+              Грамотная подготовка. Перед началом уборки необходимо выбрать методы, химию, инвентарь и оборудование для очистки — салфетки, мопы, пады, пылесосы, пароочистители, поломойные машины, швабры, кислотные, щелочные и спиртовые средства.
+            </p>
+          </li>
+          <li>
+            <p>
+              Очищение сверху вниз во всех помещениях. Это классический стандарт для любой уборки — сначала убрать слой пыли и локальные загрязнения с мебели, всех вертикальных и горизонтальных поверхностей, затем подметать и мыть полы.
+            </p>
+          </li>
+          <li>
+            <p>
+              Уборка от дальних зон к ближним. От технологической карты требуется рациональность во всем, в том числе в движении клинеров — нет смысла в первую очередь очистить холл и приемную, а потом двигаться вглубь офиса.
+            </p>
+          </li>
+          <li>
+            <p>
+              Движение от чистых поверхностей к грязным и от сухих к мокрым. Это избавит от двойной работы — повторного загрязнения очищенных мест и размокания пыли, помогает экономить воду и моющие средства.
+            </p>
+          </li>
+        </ul>
+      <p>Требования к уровню чистоты, очистке и уходу за поверхностями, химическим средствам устанавливают внутренние стандарты клининговой компании и заказчик, а также национальные стандарты профессиональной уборки. Это ГОСТ Р 51870 и ГОСТ Р 59403. При необходимости учитывают и санитарно-гигиенические нормы. </p>
+      <h2>Какие виды клининга офисов существуют</h2>
+      <p>План уборки офиса: сложность, объем работ, временные затраты зависят от вида клининга. Есть три основных способа наведения и поддержания чистоты и гигиены. </p>
+      <p class="big">Ежедневная уборка</p>
+      <p>
+        Ежедневную ручную и механизированную уборку выполняют для поддержание гигиенической и визуальной чистоты в помещениях. Как правило, её проводят раз в сутки перед началом рабочего дня или после его окончания. Она позволяет убрать мусор, легкие загрязнения и условно стойкую грязь с поверхностей, удалить пятна с напольных покрытий, продезинфицировать сантехнику и сохранить эстетичный вид материалов и мебели.
+      </p>
+      <p class="big">Генеральная уборка</p>
+      <p>Генеральная уборка нужна раз в полгода или год. Она включает в себя более интенсивные, сложные и трудоемкие операции, включая труднодоступные места, где накапливается пыль. Она необходима, чтобы тщательно очистить поверхности и покрытия — удалить стойкие загрязнения, въевшиеся пятна с мебели и стен, восстановить защитный слой на поверхности полов и освежить их внешний вид, вымыть окна и светильники.</p>
+      <p class="big">Уборка после ремонта</p>
+      <p>Послеремонтная уборка подразумевает подготовку офисных помещений к работе после строительно-отделочных работ. Её главная цель — глубокая очистка всех поверхностей выше и ниже плинтусов, позволяющая убрать мелкодисперсную пыль от строительных смесей, пятна от краски, клея, малярного скотча, затирок и другие загрязнения. При этом от клинеров требуется сохранить идеальный вид покрытий и окон, не оставить на них царапин и разводов.</p>
+      <p>Лучший результат обеспечивает системный подход. Это значит, что регулярным должен быть и поддерживающий, и генеральный клининг.</p>
+    </div>
+      <div class="pravila-card">
+
+        <img src="https://cleanfield.ru/upload/medialibrary/c9f/3mukfgx6y8d8m5554vhqcsb4vgen4wh6.jpg" alt="">
+        <h2>Что входит в уборку офиса</h2>
+        <p>По правилам уборка помещений в офисе проходит по технологической карте. Её разрабатывают отдельно для каждого объекта. Она определяет комплекс услуг, последовательность операций и их особенности.</p>
+        <p>Четыре главных правила уборки офисов:</p>
+       
+      <p>Универсального решения для экономичной и качественной уборки различных офисов нет. У каждого из них свои напольные покрытия, площадь и служебные помещения, степень загрязнения, требования к санитарии и экологичности. Индивидуальный подбор комбинации операций — наиболее верное решение и то, чего нужно начать уборку офиса.</p>
+      <p>В комплекс работ может входить:</p>
+      <ul>
+<li><p>сухая и влажная очистка поверхностей рабочих столов, тумб, шкафов, компьютерной и оргтехники с помощью салфеток и распылителей;</p></li>
+<li><p>удаление пыли с радиаторов, светильников, кабельных каналов, вентиляционных коробов, розеток и выключателей пылесборными салфетками;</p></li>
+<li><p>подметание и влажная уборка твердых напольных покрытий — плитки, керамогранита, мрамора, паркета, линолеума с помощью поломойным машин, мопов, нейтральных и узкоспециализированных средств;</p></li>
+<li><p>очистка мягкой мебели, чистка текстильных покрытий вакуумным пылесосом и удаление грязи со всей глубины ворса;</p></li>
+<li><p>уборка на офисной кухне и в санузле с чисткой керамических, глянцевых поверхностей, плитки кислотными, щелочными и дезинфицирующими средствами;</p></li>
+<li><p>протирка стен во всех помещениях и устранение локальных загрязнений на высоту до 1,8 м и более;</p></li>
+<li><p>мытье и полировка стеклянных поверхностей, зеркал, окон в двух сторон и подоконников;</p></li>
+<li><p>протирание дверей и ручек, лестничных перил и степеней в многоуровневых офисах, уборка в лифтах.</p></li>
+</ul>
+      <p>Технологическую карту согласовывают с заказчиком. При необходимости он может добавлять к списку дополнительные услуги. Например, корректировать задачи ежедневной уборки и включить в неё актуальную дезинфекцию письменных столов, дверных ручек, перил, панели управления лифтом или заказать нанесение защитного покрытия на пол после генерального клининга.</p>
+      <p>
+        Ежедневную ручную и механизированную уборку выполняют для поддержание гигиенической и визуальной чистоты в помещениях. Как правило, её проводят раз в сутки перед началом рабочего дня или после его окончания. Она позволяет убрать мусор, легкие загрязнения и условно стойкую грязь с поверхностей, удалить пятна с напольных покрытий, продезинфицировать сантехнику и сохранить эстетичный вид материалов и мебели.
+      </p>
+      <p>Компания Page Group обеспечивает чистоту в коммерческих помещениях разной площади, учитывая индивидуальные запросы. Мы используем профессиональную технику, экологичные средства для повседневного, генерального и послеремонтного клининга: ухода и очистки всех поверхностей, в том числе в санузлах, защиты покрытий. У нас есть все необходимое для решения обычных и специфических задач по уборке офисов. Качество работы персонала контролируется.</p>
+      <p class="big">Генеральная уборка</p>
+      <p>Генеральная уборка нужна раз в полгода или год. Она включает в себя более интенсивные, сложные и трудоемкие операции, включая труднодоступные места, где накапливается пыль. Она необходима, чтобы тщательно очистить поверхности и покрытия — удалить стойкие загрязнения, въевшиеся пятна с мебели и стен, восстановить защитный слой на поверхности полов и освежить их внешний вид, вымыть окна и светильники.</p>
+      <p class="big">Уборка после ремонта</p>
+      <p>Послеремонтная уборка подразумевает подготовку офисных помещений к работе после строительно-отделочных работ. Её главная цель — глубокая очистка всех поверхностей выше и ниже плинтусов, позволяющая убрать мелкодисперсную пыль от строительных смесей, пятна от краски, клея, малярного скотча, затирок и другие загрязнения. При этом от клинеров требуется сохранить идеальный вид покрытий и окон, не оставить на них царапин и разводов.</p>
+      <p>Лучший результат обеспечивает системный подход. Это значит, что регулярным должен быть и поддерживающий, и генеральный клининг.</p>
+    </div>
+    <a href="" class="a-hover" >К списку статей</a>
+    </div>
+
+
+    <div class="kachestvo-cards">
+      <div class="kachestvo-card">
+        <div class="img">
+          <img src="https://cleanfield.ru/upload/iblock/c4c/c4c97c1c2c23cfdc12221006e4de2786.jpg" alt="">
+          <div class="img-pos">
+            <div class="podrobne">
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <h2>
+        Качественная уборка офисов от 29р за м2					</h2>
+      </div>
+      <div class="kachestvo-card">
+        <div class="img">
+          <img src="https://cleanfield.ru/upload/iblock/d00/d00a4b0cbaf02b28f382dcc4b26b7c6c.jpg" alt="">
+          <div class="img-pos">
+            <div class="podrobne">
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <h2>
+        
+						Уборка квартир										</h2>
+      </div>
+      <div class="kachestvo-card">
+        <div class="img">
+          <img src="https://cleanfield.ru/upload/iblock/3b0/3b0835078821d096c770bb00d6893bd2.jpg" alt="">
+          <div class="img-pos">
+            <div class="podrobne">
+              <a href="#">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <h2>Химчистка диванов</h2>
+      </div>
+    </div>
+
+    </div>
+
+  </section>
+
+    <footer>
+	<div class="container-fluid">
+		<div class="row container">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-10 col-md-12 col-sm-12 col-12">
+				<div class="row">
+					<div class="col-lg-2 col-md-4 col-sm-6 col-12">
+						<div class="white-title">Контактная информация</div>
+						<div class="contact-info">
+							<div class="contact-info-phones">
+								<p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+78122425031"><span class="new-phone">8 (812) 747-81-43</span></a></p>							</div>
+							<div class="contact-info-map">
+								<p><i class="fas fa-map-marker-alt"></i>Санкт - Петербург, ул. Профессора Попова, д.8</p>							</div>
+							<div class="contact-info-mail selectMust">
+								<p class="selectMust">
+	<i class="far fa-envelope"></i><a href="mailto:info9@cleanfield.ru" class="selectMust">info9@pagegroup.ru</a>
+</p>							</div>
+							<div class="contact-info-time">
+								<i class="far fa-clock"></i><p>
+	Ежедневно: <br>
+	с 8-00 до 22-00
+</p>							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6 col-12">
+						<div class="white-title">Полезные разделы</div>
+						<div class="footer-services">
+						  <ul>
+						    <li><a href="#why_cleanfield">О нас</a></li>
+              <li><a href="#reviews">Отзывы</a></li>
+              <li><a href="#kontakt">Контакты</a></li>
+						    <li><a href="#question">Вопрос-ответ</a></li>
+						    <li><a href="#">Статьи</a></li>
+						  </ul>
+						</div>
+											</div>
+					<div class="col-lg-2 col-md-4 col-sm-6 col-12">
+						<div class="white-title">Мы в соц. сетях:</div>
+						<div class="social-icons">
+							<div id="bxdynamic_XEVOpk_start" style="display:none"></div>
+<ul>
+
+			<li><a target="_blank" href="https://www.youtube.com/channel/UCwpj9bnR26XgRNxMROCL7eg?view_as=subscriber" rel="nofollow"><img width="20px" src="./assest/imgs/youtube.png" alt=""> Youtube</a></li>
+		
+			<li><a target="_blank" href="https://vk.com/public171817049" rel="nofollow"><img width="20px" src="./assest/imgs/wkontakte.png" alt=""> VK</a></li>
+		
+
+</ul>
+<div id="bxdynamic_XEVOpk_end" style="display:none"></div>						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+						<div class="white-title">Наши услуги:</div>
+						<div class="footer-services">
+							<div id="bxdynamic_g8taYv_start" style="display:none"></div>
+<ul>
+						<li><a href="/uslugi/uborka_kvartir_v_sankt_peterburge/">Уборка квартир</a></li>
+								<li><a href="/uslugi/uborka_ofisov/">Уборка офисов</a></li>
+								<li><a href="/uslugi/uborka_posle_remonta_stroitelstva/">Клининг после ремонта</a></li>
+								<li><a href="/uslugi/uborka_ofisov_posle_remonta/">Уборка офисов после ремонта</a></li>
+								<li><a href="/uslugi/generalnaya_uborka/">Генеральный клининг</a></li>
+								<li><a href="/uslugi/uborka_pomeshcheniy/">Уборка помещений</a></li>
+			</ul>
+
+<div id="bxdynamic_g8taYv_end" style="display:none"></div>						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+						<div class="white-title color-trans" style="
+    color: #fff; opacity: 0;@media (max-width: 576px) {
+      display: none;
+    }
+">Наши услуги:</div>
+						<div class="footer-services">
+						<div id="bxdynamic_rIpOz9_start" style="display:none"></div>
+<ul>
+						<li><a href="/uslugi/ezhednevnaya_uborka_/">Ежедневная уборка</a></li>
+								<li><a href="/uslugi/moyka_fasadov/">Мойка фасадов</a></li>
+								<li><a href="/uslugi/moyka_okon/">Мойка окон</a></li>
+								<li><a href="/uslugi/uborka_skladskikh_pomeshcheniy/">Уборка складов</a></li>
+								<li><a href="/uslugi/uborka_proizvodstvennykh_pomeshcheniy/">Уборка производств</a></li>
+			</ul>
+
+<div id="bxdynamic_rIpOz9_end" style="display:none"></div>					</div>
+				</div>
+				<div class="col-12">
+					<div class="col-12 hidden-md-down"></div>
+					<div class="col-12">
+						<div class="developer" style="justify-content: center;">
+														
+							<p class="text-center">© 2018—2022 Page Group <br><a href="#">Карта сайта</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-1"></div>
+		</div>
+	</div>
+
+</div></footer>
+
+
+<a href="#"  class="fixid">
+</a>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
