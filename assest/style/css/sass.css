@@ -1386,6 +1386,12 @@ section#news .news-cards {
   padding: 0 50px;
   gap: 30px;
 }
+@media (max-width: 768px) {
+  section#news .news-cards {
+    grid-template-columns: 1fr;
+    padding: 0 40px;
+  }
+}
 section#news .news-cards .news-card {
   padding: 50px;
   padding-bottom: 20px;

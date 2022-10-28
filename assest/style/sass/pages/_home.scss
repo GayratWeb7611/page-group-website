@@ -613,6 +613,10 @@ section#news{
         grid-template-columns: 1fr 1fr;
         padding: 0  50px;
         gap: 30px;
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            padding: 0  40px;
+        }
         .news-card{
             padding: 50px;
             padding-bottom: 20px;
