@@ -1,4 +1,7 @@
 section#showcase{
+    @media (max-width: 768px) {
+        margin-top: 50px;
+    }
     .show-container{
         display: flex;
         // padding: 40px 0;
@@ -52,6 +55,10 @@ section#showcase{
                 font-size: 24px;
                 line-height: 140%;
                 padding-bottom: 32px;
+                @media (max-width: 500px) {
+                    line-height: 1;
+                    font-size: 20px;
+                }
             }
             
         }
@@ -178,6 +185,7 @@ section#podgotovim{
     background: $blue;
     margin: 50px 0;
     padding-bottom: 30px;
+  
     .p-wrapper{
         display: grid;
         grid-template-columns: 3fr 2fr;
@@ -316,7 +324,10 @@ section#why_cleanfield{
             display: inline-block;
         }
          @media (max-width: 430px) {
-                font-size: 80px;
+                font-size: 65px;
+        }
+         @media (max-width: 400px) {
+                font-size: 50px;
         }
             }
             p{
@@ -628,7 +639,7 @@ section#news{
         gap: 30px;
         @media (max-width: 768px) {
             grid-template-columns: 1fr;
-            padding: 0  40px;
+            padding: 0;
         }
         .news-card{
             padding: 50px;
@@ -636,6 +647,9 @@ section#news{
             max-width: 600px;
             border-radius: 20px;
             border: 1px solid $grey;
+            @media (max-width: 768px) {
+                padding: 20px;
+            }
             h3{
              font-size: 22px; 
              text-transform: uppercase;
@@ -737,6 +751,10 @@ section#leave-form{
                         @media (max-width:675px) {
                margin-top: 0;
                padding: 40px 20px;
+            }
+                        @media (max-width:500px) {
+               margin-top: 0;
+               padding: 20px 10px;
             }
         form{
             .input-group{

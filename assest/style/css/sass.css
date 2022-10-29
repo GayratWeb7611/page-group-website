@@ -734,6 +734,11 @@ footer .developer p a {
   }
 }
 
+@media (max-width: 768px) {
+  section#showcase {
+    margin-top: 50px;
+  }
+}
 section#showcase .show-container {
   display: flex;
 }
@@ -798,6 +803,12 @@ section#showcase .show-container .show-left p {
   font-size: 24px;
   line-height: 140%;
   padding-bottom: 32px;
+}
+@media (max-width: 500px) {
+  section#showcase .show-container .show-left p {
+    line-height: 1;
+    font-size: 20px;
+  }
 }
 section#showcase .show-container .show-right {
   z-index: -2;
@@ -1079,7 +1090,12 @@ section#why_cleanfield .why-grid .one p b {
 }
 @media (max-width: 430px) {
   section#why_cleanfield .why-grid .one p b {
-    font-size: 80px;
+    font-size: 65px;
+  }
+}
+@media (max-width: 400px) {
+  section#why_cleanfield .why-grid .one p b {
+    font-size: 50px;
   }
 }
 section#why_cleanfield .why-grid .one p {
@@ -1402,7 +1418,7 @@ section#news .news-cards {
 @media (max-width: 768px) {
   section#news .news-cards {
     grid-template-columns: 1fr;
-    padding: 0 40px;
+    padding: 0;
   }
 }
 section#news .news-cards .news-card {
@@ -1411,6 +1427,11 @@ section#news .news-cards .news-card {
   max-width: 600px;
   border-radius: 20px;
   border: 1px solid rgb(211, 202, 202);
+}
+@media (max-width: 768px) {
+  section#news .news-cards .news-card {
+    padding: 20px;
+  }
 }
 section#news .news-cards .news-card h3 {
   font-size: 22px;
@@ -1525,6 +1546,12 @@ section#leave-form .l-f-body {
   section#leave-form .l-f-body {
     margin-top: 0;
     padding: 40px 20px;
+  }
+}
+@media (max-width: 500px) {
+  section#leave-form .l-f-body {
+    margin-top: 0;
+    padding: 20px 10px;
   }
 }
 section#leave-form .l-f-body form .input-group {
