@@ -1388,6 +1388,11 @@ section#reviews .container .r-cards .r-column .r-card .r-card-desc {
   line-height: 150%;
 }
 
+section#news a.btn-hov-eff {
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+}
 section#news .news-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;

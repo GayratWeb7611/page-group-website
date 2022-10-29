@@ -616,6 +616,11 @@ section#reviews{
 }
 
 section#news{
+    a.btn-hov-eff{
+        display: block;
+        margin: 30px auto;
+        text-align: center;
+    }
     .news-cards{
         display: grid;
         grid-template-columns: 1fr 1fr;
