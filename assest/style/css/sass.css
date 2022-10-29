@@ -1369,6 +1369,11 @@ section#reviews .container .r-cards .r-column .r-card {
   max-width: 490px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  section#reviews .container .r-cards .r-column .r-card {
+    padding: 20px;
+  }
+}
 section#reviews .container .r-cards .r-column .r-card:hover {
   transform: scale(1.15, 1.15);
   box-shadow: 0 0 5px #ccc;

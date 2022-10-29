@@ -593,6 +593,9 @@ section#reviews{
                     transition-duration: 1s;
                     max-width: 490px;
                     margin: 0 auto;
+                    @media (max-width: 768px) {
+                        padding: 20px;
+                    }
                     &:hover{
                         transform: scale(1.15, 1.15);
                         box-shadow: 0 0 5px #ccc;
