@@ -1358,6 +1358,9 @@ section#reviews .container .r-cards .r-column {
   flex-direction: column;
   gap: 40px;
 }
+section#reviews .container .r-cards .r-column a:hover {
+  color: inherit;
+}
 section#reviews .container .r-cards .r-column .r-card {
   padding: 40px;
   background: #f8f8f8;
