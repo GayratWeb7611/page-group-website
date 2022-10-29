@@ -1114,6 +1114,13 @@ section#why_cleanfield .why-grid .two {
     grid-row: 1/4;
   }
 }
+@media (max-width: 500px) {
+  section#why_cleanfield .why-grid .two {
+    grid-column: 3;
+    grid-row: 1/4;
+    padding-top: 24px;
+  }
+}
 section#why_cleanfield .why-grid .two p {
   margin: 0;
   color: #fff;
