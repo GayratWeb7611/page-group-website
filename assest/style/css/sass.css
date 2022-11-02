@@ -521,6 +521,8 @@ footer .contact-info .contact-info-phones, footer .contact-info .contact-info-ma
 }
 footer .contact-info .contact-info-phones i, footer .contact-info .contact-info-mail i, footer .contact-info .contact-info-map i, footer .contact-info .contact-info-time i {
   padding-right: 10px;
+  color: #fff !important;
+  font-size: 24px;
 }
 footer .contact-info p, footer .contact-info a {
   font-family: "Roboto Mono" !important;
